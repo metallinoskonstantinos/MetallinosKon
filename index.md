@@ -10,11 +10,11 @@ Introduction
 
 Methods
 ========================================================
-
+To find the information needed for the comparison we will search google trends for answers. Furthermore, we will search for terms like "how to lose weight", "weight loss" or "fat to fit". This search will be done for two different time periods, one for the summer months and one for the winter months. And the two different means that google trends will provide us will be compared. Also, the search will refer to results found in Greece. 
 
 Proposed analyses
 ========================================================
-
+Now, referring to the proposed analysis. Because we will compare means and more specifically means from independent samples the statistical analysis we will have to use is independent samples t-test. Also, we will use Kolmogorov-Smirnov Test for each variable to test if they are normally distributed, before we compare the means.
 
 References
 ========================================================
