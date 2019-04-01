@@ -1,0 +1,29 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r Showing data}
+```
+
+
+```{r cache=FALSE}
+knitr::read_chunk('data_collection.R')
+```
+
+```{r load packages}
+```
+
+```{r google trends query}
+```
+
+
+```{r get interest over time}
+```
+
+```{r save data}
+```
+
