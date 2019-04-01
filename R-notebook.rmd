@@ -1,0 +1,62 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+
+'''{r cache=FALSE}
+knitr::read_chunk('data_analysis.R')
+'''
+
+```{Showing Data}
+```
+
+
+
+
+```{rinstall packages}
+install.packages("gtrendsR")
+install.packages("lubridate")
+```
+
+```{rload the gtrendsR package}
+library(gtrendsR)
+```
+
+
+```{rload the lubridate package}
+library(lubridate)
+```
+
+```{rgoogle trends query}
+df <- gtrends(keyword = c("lose weight"),geo=c("GR"),time="2016-12-01 2018-12-31")
+df <- gtrends(keyword = c("lose weight"),geo=c("GR"),time="2016-12-01 2018-12-31")
+df_iot <- df$interest_over_time
+winter <- df_iot[month(df_iot$date) == 12 |month(df_iot$date) == 1 |month(df_iot$date) == 2, ]
+summer <- df_iot[month(df_iot$date) == 6 |month(df_iot$date) == 7 |month(df_iot$date) == 8, ]
+trends <- gtrendsR::gtrends(keyword = c("lose weight"),geo = c("GR"),time = "2016-12-01 2018-12-31")
+```
+
+```{rget interest overtime}
+interest_over_time <- trends$interest_over_time
+```
+
+
+```{rsave data}
+my_data <- gtrends(keyword = c("lose weight"), geo = c("GR"), time = "2016-12-01 2018-12-31")
+write.csv(my_data$interest_over_time,"interestovertime.csv")
+```
+
+
+```{rused of Kolmogorov-Smirnov test}
+ks.test(x = df_wide$group_a, y = df_wide$group_b)
+```
+
+
+```{rused independent t-test to analyse data}
+t.test(x = df_wide$group_a, y = df_wide$group_b, var.equal = TRUE)
+```
+
+
