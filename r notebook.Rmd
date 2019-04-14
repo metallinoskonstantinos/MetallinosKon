@@ -1,0 +1,68 @@
+---
+title: "R Notebook"
+author: "Chatzivasileiou Ariadni, Kerasidou Maria, Metallinos Konstantinos, Sela Marios"
+nocite: |
+  @julia_weight-loss_2014, @hadigan_body_1991, @kolar_seasonal_2018
+bibliography: bibliography.bib
+---
+
+
+
+```{r cache=FALSE}
+knitr::read_chunk('data_collection.R')
+```
+
+
+```{r Loading necessary packages}
+```
+
+
+```{r Google trends query}
+```
+
+
+```{r Getting interest over time}
+```
+
+
+```{r Saving data}
+```
+
+
+```{r Analysing data}
+```
+
+
+```{r Generating data}
+```
+
+
+```{r Showing data in wide format}
+```
+
+
+```{r Running the analyses}
+```
+
+
+```{r Creating df_final variable}
+```
+
+
+```{r Data visualization}
+```
+
+
+```{r Generate code}
+```
+
+
+```{r Results of ks-test}
+```
+
+
+```{r Results of t-test}
+```
+
+
+# References
