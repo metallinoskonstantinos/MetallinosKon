@@ -80,7 +80,7 @@ We reject the null hypothesis (H0) and we accept the alternative hypothesis (H1)
 
 ## Boxplot
 
-![alt text](Rplot.03.png) 
+![](Rplot.03.png) 
 
 ## Boxplot results
 
